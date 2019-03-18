@@ -13,4 +13,10 @@ jQuery(document).ready(function($) {
         skin: "modern"
 	});
 
+	$('.form-search').submit(function(event) {
+		event.preventDefault();
+
+		$('.box-results').show();
+	});
+
 });

@@ -81,9 +81,9 @@
 		
 		<section class="home">
 			<div class="container">
-				<div class="box-searcher">
+				<div class="box-searcher box">
 					<h2 class="title">¡Buscador de usuarios!</h2>
-					<form action="" method="post">
+					<form action="" method="post" class="form-search">
 						<div class="row">					
 							<div class="col-xs-12 col-sm-6">
 								<div class="form-group">
@@ -101,7 +101,7 @@
 										<div class="input-group-prepend">
 											<div class="input-group-text"><i class="fas fa-id-card"></i></div>
 										</div>
-										<input type="number" class="form-control" name="id" placeholder="Identificación:" required>
+										<input type="number" class="form-control" name="id" placeholder="Identificación:">
 									</div>				
 								</div>
 							</div>
@@ -115,6 +115,53 @@
 						<input type="submit" value="Filtrar" class="btn w-100 col-whi btn-std-green btn-animated">
 					</form>
 				</div>
+
+				
+				<div class="box-results box">
+					<div class="card mb-3 user-founded">
+						<div class="card-header">
+							<i class="fas fa-table"></i>
+							Usuario Encontrados
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover" width="100%" cellspacing="0">
+									<thead>
+										<tr>
+											<th><i class="fas fa-user"></i> Nombre</th>
+											<th><i class="fas fa-id-card"></i> Identificación</th>
+											<th><i class="fas fa-equals"></i> Porcentaje Coincidencia</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Juan Pablo Chica</td>
+											<td>1088318345</td>
+											<td>35%</td>
+										</tr>
+										<tr>
+											<td>Nicolas Chica</td>
+											<td>010101</td>
+											<td>50%</td>
+										</tr>
+										<tr>
+											<td>Felipe Chica</td>
+											<td>222222</td>
+											<td>85%</td>
+										</tr>
+										<tr>
+											<td>Sergio Orrego</td>
+											<td>35645489</td>
+											<td>15%</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</section>
 
