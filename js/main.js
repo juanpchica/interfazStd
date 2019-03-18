@@ -1,3 +1,3 @@
 jQuery(document).ready(function($) {
-	alert("hola");
+	$('#login-modal').modal();
 });

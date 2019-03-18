@@ -1,3 +1,45 @@
 body{
-	background: red;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+/* General Styles */
+.btn-std-green {
+    background: #1e120d;
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* Login */
+.content-login button.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 25px;
+}
+figure.login-brand {
+    max-width: 150px;
+    margin: 20px auto;
+}
+.login-modal{
+	background: rgb(175,199,10);
+	background: linear-gradient(183deg, rgba(175,199,10,1) 0%, rgba(159,184,112,1) 49%, rgba(60,128,36,1) 100%);
+}
+.content-login {
+    border-radius: 0;
+    border: none;
+    box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries */
+
+@media (min-width: 768px){
+	figure.login-brand {
+	    max-width: 190px;
+	}
 }
