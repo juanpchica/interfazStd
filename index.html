@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
 
 	<title>Interfaz Stradata</title>
 
@@ -229,5 +230,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		jQuery(document).ready(function($) {
+			$(".js-range-slider").ionRangeSlider({
+		        min: 0,
+		        max: 100,
+		        from: 0,
+		        to: 100,
+		        grid: true,
+		        skin: "modern"
+			});
+
+			$('.form-search').submit(function(event) {
+				event.preventDefault();
+
+				$('.box-results').show();
+			});
+		});
+	</script>
 </body>
 </html>

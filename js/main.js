@@ -4,19 +4,5 @@ jQuery(document).ready(function($) {
 	/* Menu */
 	$('nav#menu').mmenu();
 	
-	$(".js-range-slider").ionRangeSlider({
-        min: 0,
-        max: 100,
-        from: 0,
-        to: 100,
-        grid: true,
-        skin: "modern"
-	});
-
-	$('.form-search').submit(function(event) {
-		event.preventDefault();
-
-		$('.box-results').show();
-	});
 
 });

@@ -100,6 +100,9 @@ header {
 	color: #3e8024;
 	font-size: 28px;
 }
+.menu-mobile{
+	display: none;
+}
 .btn-menu-mobile:hover{
 	color: #adc619;
 }
@@ -154,6 +157,25 @@ section.home::before {
 	display: none;
 }
 
+/* Page Inside */
+.page-inside {
+    padding: 25px 10px;
+}
+.box-info {
+    text-align: justify;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Services */
+.content-services figcaption {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.content-services {
+    padding: 40px 0;
+}
+
 /* Media Queries */
 @media (min-width: 768px){
 	figure.login-brand {
@@ -168,6 +190,9 @@ section.home::before {
 
 @media (min-width: 992px){
 	.btn-menu-mobile{
+		display: none;
+	}
+	.menu-mobile{
 		display: none;
 	}
 	.menu-top{
@@ -196,5 +221,8 @@ section.home::before {
 	.title {
 	    font-size: 32px;
 	    margin: 15px 0 40px;
+	}
+	.page-inside {
+	    padding: 50px 10px;
 	}
 }
